@@ -1,0 +1,9 @@
+Kickstart = 
+text = instalacion en solo modo txt
+vnc = instalacion y revision via remota
+vnc --passwd= redhat
+clearpart = limpie las etiquetas del disco 
+part = especificar la particion que se va a crear = tamaño, etiqueta --grow puede crecer
+bootloader = 
+firewall = permitido el acceso a ssh o copias
+lan = se utiliza ppara especificar el idioma en que se va instalar
