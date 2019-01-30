@@ -4,6 +4,22 @@ vnc = instalacion y revision via remota
 vnc --passwd= redhat
 clearpart = limpie las etiquetas del disco 
 part = especificar la particion que se va a crear = tamaño, etiqueta --grow puede crecer
-bootloader = 
+bootloader = cargador de arranque 
 firewall = permitido el acceso a ssh o copias
 lan = se utiliza ppara especificar el idioma en que se va instalar
+LANG = configuracion del idioma
+Keyboard = configuracion del teclado
+timezone =configuracion del horario con servidor de timepo 
+auth = cifrado el cifrado de esta version es "sha512"
+rootpw = contraseña ara root "rootw--pplaintext redhat"
+
+
+-------------------------------------------------------------------------------------
+system-config-kickstart = comando para configurar un archivo kickstart con herramienta
+ksvalidator /tmp/anaconda-ks.cfg = validar el archivo 
+
+*Nota: elementos necesarios para el archivo kickstart = password de root, paquetes que va a instalar*
+
+
+
+
