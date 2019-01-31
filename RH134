@@ -21,5 +21,21 @@ ksvalidator /tmp/anaconda-ks.cfg = validar el archivo
 *Nota: elementos necesarios para el archivo kickstart = password de root, paquetes que va a instalar*
 
 
+*Expresiones regulares*
+
+uso de limitadores
+$= si el patron se encuentra al final de la linea
+ = que la palabra este al inicio de la linea 
+ 
+ Comodines
+ .= que la ppalabra inicie con cualquier letra y termine  (e.t)
+ []= conjuntos de valores (c[aou]t)
+ 
+ Multiplicador 
+ * = que la palabra incie con una letra en especifico (c.*t) puede tener 0 o mas carcteres dentro  
+ {} = que dentro tengas los caracteres que se le asigenen c.{2}t
+ 
+
+
 
 
