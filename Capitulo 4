@@ -1,0 +1,8 @@
++----------------Programacion de tarea futuras de linux------------+
+
+-at = ejecuta tareas especificas
+-atq =  lista las tareas
+-atrm = elimina tareas programas
+
+Ejemplo -
+$ at now +3min = se especifica que se va hacer un trbajao dentro de 3 minutos
