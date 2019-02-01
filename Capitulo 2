@@ -1,1 +1,9 @@
-
+ *---Busqueda cpn grep-----*
+  grep '*cat$' /etc/ee/ = buscar lineas que tengan al final la palabra nuscada
+  PS AUX | grep 'stuent' = filtar lines que inicien con la palabra mencionada
+  grep -i = muestra con mayusculs y minusculas la busqueda
+  grep -v = muetra excluyendo lo que se le esta pasando Ejemplo = grep -v -i 'cat' /etc = excluye cat
+  grep -v '´´[%;]' = excluye las lineas que inician con gato o unto y coma
+  grep -r localhost /etc/* = va a buscar los archivos que contenagn esa informacion solicitada = mnera recursiva busqueda en directorios
+  grep -e cat -e dog = para hacer multiples busquedas
+  grep -A 1 -B 1 'buscar' /etc/De = puede mostrar las lienas en las que se encuentras antes del solicitado y despues
