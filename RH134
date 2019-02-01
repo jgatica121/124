@@ -47,6 +47,37 @@ $= si el patron se encuentra al final de la linea
   
   
   
+  
+  
+ *-------------Creación y edición de archivos de texto con VIM--------------*
+ 
+ command = este modo es el principal = en el cual no se puede escribir solo visualizar la informacion
+ modo insertar = edicion de texto normal
+ modo ex = cerrar gurdar = :set num = muetra lineas enumeradas
+ 
+ 
+ ----Nota cuando abres vi = siendo un usuario regular se abre el ---vim-- 
+ ----Nota cuando eres super usuario tienes que abrir como tal vim--------
+ 
+ -----COMANDOS-------
+ ESC+U = desacer cambios que se hicieron
+ SHIF+A = Al final de la linea y modo insercion
+ SHIF+O = Insercion y nueva linea
+ SHIF+R = remplaz el contenido donde se posiciona
+ gg = al inicio del doc
+ G = final del doc
+ circunfelgo = te lleva al principio de la linea 
+ $ = final de la linea
+ w = moverse entre plabras
+ b = regresar a la palabra anterior
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 
 
