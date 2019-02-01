@@ -35,69 +35,17 @@ $= si el patron se encuentra al final de la linea
  * = que la palabra incie con una letra en especifico (c.*t) puede tener 0 o mas carcteres dentro  
  {} = que dentro tengas los caracteres que se le asigenen c.{2}t
  
- *---Busqueda cpn grep-----*
-  grep '*cat$' /etc/ee/ = buscar lineas que tengan al final la palabra nuscada
-  PS AUX | grep 'stuent' = filtar lines que inicien con la palabra mencionada
-  grep -i = muestra con mayusculs y minusculas la busqueda
-  grep -v = muetra excluyendo lo que se le esta pasando Ejemplo = grep -v -i 'cat' /etc = excluye cat
-  grep -v '´´[%;]' = excluye las lineas que inician con gato o unto y coma
-  grep -r localhost /etc/* = va a buscar los archivos que contenagn esa informacion solicitada = mnera recursiva busqueda en directorios
-  grep -e cat -e dog = para hacer multiples busquedas
-  grep -A 1 -B 1 'buscar' /etc/De = puede mostrar las lienas en las que se encuentras antes del solicitado y despues
+
   
   
   
   
-  
- *-------------Creación y edición de archivos de texto con VIM--------------*
- 
- command = este modo es el principal = en el cual no se puede escribir solo visualizar la informacion
- modo insertar = edicion de texto normal
- modo ex = cerrar gurdar = :set num = muetra lineas enumeradas
- 
- 
- ----Nota cuando abres vi = siendo un usuario regular se abre el ---vim-- 
- ----Nota cuando eres super usuario tienes que abrir como tal vim--------
- 
- -----COMANDOS-------
- ESC+U = desacer cambios que se hicieron
- CONTROL+r = reacer los cambioss
- SHIF+A = Al final de la linea y modo insercion
- SHIF+O = Insercion y nueva linea
- SHIF+R = remplaz el contenido donde se posiciona
- gg = al inicio del doc
- G = final del doc
- circunfelgo = te lleva al principio de la linea 
- $ = final de la linea
- w = moverse entre plabras = se puede moverse varias palabras a la vez usando numero EJ. 4+w
- b = regresar a la palabra anterior
- cw = para remplazar palabras
- c$ = combinacion de teclas sustituir una linea completa
- ~ = usando la tilde se hace el cambio de minucula a mayuscula 
- x = borra (Modo comando)
- dd = borrar una linea (Modo comando)
- y = para copiar una linea si se quiere coiar mas lineas ocupar numero mas y 2+y
- p = para pegar
- 
- **Registros especiales**
- van del 0 a  9
- 
- 
- --MODO VISUAL
- --MODO VIsual por blocke
-  
-  
-  ? = hace busqueda de donde se encuentra el cursor al inicio del dock
-  /\<problem> = buscar una palabra dentro de una palabra
-  :%$/adresses/direcciones = sustirucion en una sola line
-  :%$/adresses/direcciones/g = sustituye en las conicidencias que encuentra
-  SHIF+* = seleciona una palabra para cambiarla
+
   
  
  
  
- 
- 
+
  
  
  
