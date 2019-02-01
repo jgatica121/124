@@ -1,1 +1,43 @@
-
+ *-------------Creación y edición de archivos de texto con VIM--------------*
+ 
+ command = este modo es el principal = en el cual no se puede escribir solo visualizar la informacion
+ modo insertar = edicion de texto normal
+ modo ex = cerrar gurdar = :set num = muetra lineas enumeradas
+ 
+ 
+ ----Nota cuando abres vi = siendo un usuario regular se abre el ---vim-- 
+ ----Nota cuando eres super usuario tienes que abrir como tal vim--------
+ 
+ -----COMANDOS-------
+ ESC+U = desacer cambios que se hicieron
+ CONTROL+r = reacer los cambioss
+ SHIF+A = Al final de la linea y modo insercion
+ SHIF+O = Insercion y nueva linea
+ SHIF+R = remplaz el contenido donde se posiciona
+ gg = al inicio del doc
+ G = final del doc
+ circunfelgo = te lleva al principio de la linea 
+ $ = final de la linea
+ w = moverse entre plabras = se puede moverse varias palabras a la vez usando numero EJ. 4+w
+ b = regresar a la palabra anterior
+ cw = para remplazar palabras
+ c$ = combinacion de teclas sustituir una linea completa
+ ~ = usando la tilde se hace el cambio de minucula a mayuscula 
+ x = borra (Modo comando)
+ dd = borrar una linea (Modo comando)
+ y = para copiar una linea si se quiere coiar mas lineas ocupar numero mas y 2+y
+ p = para pegar
+ 
+ **Registros especiales**
+ van del 0 a  9
+ 
+ 
+ --MODO VISUAL
+ --MODO VIsual por blocke
+  
+  
+  ? = hace busqueda de donde se encuentra el cursor al inicio del dock
+  /\<problem> = buscar una palabra dentro de una palabra
+  :%$/adresses/direcciones = sustirucion en una sola line
+  :%$/adresses/direcciones/g = sustituye en las conicidencias que encuentra
+  SHIF+* = seleciona una palabra para cambiarla
