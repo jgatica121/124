@@ -33,7 +33,11 @@ inicio 9 am cualquier mes cualquier semana dias lunes a viernes
  run.parts = para ejecutar lo que se encuentra en daily
  
  
- /etc/anacrontab = encargado de las tareas que no se ejecutan
+ /etc/anacrontab = encargado de las tareas que no se ejecutan y necesitan ser ejecutas 
+ 
+ 
+ ------Administracion de archivos temporales--------
+ 
   
   
 
