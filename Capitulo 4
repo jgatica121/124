@@ -4,5 +4,40 @@
 -atq =  lista las tareas
 -atrm = elimina tareas programas
 
+/var/spool/cron/*usuario* = ruta donde se almacena las tareas que se realicen 
+
 Ejemplo -
 $ at now +3min = se especifica que se va hacer un trbajao dentro de 3 minutos
+
+
+cron = programacion de tareas periodicas
+
+crontab -l = listar tareas que se va a ejecutar
+crontab -r = eliminar todas las tareas
+crontab -e = crear una tarea  
+
+---Todos los usuarios pueden agregar en cron 
+dentro del archivo cron.deny = excluyes usuarios para ejecutar tareas
+
+
+* = no importa = se aplica todo 
+0 09 * * 1-5 = ejemplo 
+inicio 9 am cualquier mes cualquier semana dias lunes a viernes
+
+*/10 = sintaxis para ejecuare cada 10 minutos 
+
+*/10 09-17 1,7,15 * 1-5
+ 
+ 
+ % = salto de linea para el cuerpo de mensaje
+ run.parts = para ejecutar lo que se encuentra en daily
+ 
+ 
+ /etc/anacrontab = encargado de las tareas que no se ejecutan
+  
+  
+
+
+
+
+
