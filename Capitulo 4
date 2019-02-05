@@ -37,6 +37,12 @@ inicio 9 am cualquier mes cualquier semana dias lunes a viernes
  
  
  ------Administracion de archivos temporales--------
+ systemd-tmpfiles = encargado de borrar los registros que se quedan en tmp, dar de alta 
+ clean 
+ create 
+ 
+ 
+ 
  
   
   
