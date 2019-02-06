@@ -1,1 +1,14 @@
+*******Administracion de la prioridad de los procesos de linux**************
+cambiar prioridades a los procesos 
 
+niveles varian -20 hasta 19 = entre menor sea el valor la prioridad es mayor
+Shed_normal = forma de asignar los tiempos
+ Valor nice = -20 a 19
+ 
+ escala global que usa el kernel = -99 a 39
+ 
+ cgroups = encargado de revisar procesos 
+ 
+ un usuario regular no puede restar la configuracin
+ 
+ 
