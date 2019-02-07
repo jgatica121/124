@@ -11,4 +11,14 @@ Shed_normal = forma de asignar los tiempos
  
  un usuario regular no puede restar la configuracin
  
+ PR = confiruacion que se asigan or el kernel
+ NI = prioridad que podemos modificar
+ 
+ top = prioridades de los procesos _(comando)
+ ps axo pid,comm,nice --sort=-nice = mostrar priodidad de los procesos
+ 
+ nice -n -# "Comando a ejecutar" =  arrancar un proceso con prioridad
+ renice -n -# "Identificador del proceso" = cambiar los valores a un proceso que ya existe
+ 
+ 
  
