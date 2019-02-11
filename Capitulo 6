@@ -55,5 +55,7 @@ getfacl file-A | setfacl --set-file=- file-B = las ACL que tiene file-A se le pa
 setfacl -x u:student: arch= se elimina las ACL de un usuario
 setfacl -k /../ = eliminar ACL de default
 setfacl -b /../ = eliminar todas las ACL
+---------------------------------------------------------------------------------
+
 
 
