@@ -1,1 +1,44 @@
+----------Control de acceso a archivos con listas de control de acceso (ACL)--------------
 
+
+Trabajar con permisos estandar y epeciales
+
+--especiales--
+1.-suid
+2.-sgid ====== dentro de este capitulo se va a trabajar solo con este permiso que es el de grupos
+3.-sticky bit
+
+groupmems -g rh134 -l = informacion de los usuarios que pertenecen al grupo
+
+------------------
+-- groupadd         --   agregar grupo (repaso)
+-- usermod -aG      --   modificar grupo de usuario (rapaso)
+-- chgrp rh134 /../ --
+------------------
+
+chmod 2770 /../ = agregando que el directorio sea comartido 
+chmod g+s /../
+
+getfacl = comando para mostrar las ACL que se han agregado
+
+
+---creacion de ACL-------------------------------------------------------------------------------------------------
+setfacl -Rm user:visitante:rwx /comparido = se le asigana permiso a un usuario llamado visitante el cual tiene toos los permisos estandar y tiene acceso al directorio y contenido
+setfacl -Rm group:group:rwx /comparido
+R = recursividad
+m= modifail
+
+setfacl -m default:user:visitante:rwx /compatido = acceso a los archivo nuevos
+setfacl -m default:group:group:rwx /compatido 
+
+------------------------------------------------------------------------------------------------
+
+------Cambio de MASK----------------------------------------------------------------------------------------------
+chmod g+x Arcivo = se hace el cambio de la mask para agregar el permiso de ejecucion
+
+---setfacl -m mask:rx /.../ = cambiar la mascara para el directorio y su contenido 
+---setfacl -m default:mask:rx /.../ = para todos los archivos nuevos 
+
+
+mask = cuando se cambia solo es efectiva para los usuarios externos y el grupo, al dueño no le afecta
+-------------------------------------------------------------------------------------------------------------------
