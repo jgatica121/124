@@ -42,3 +42,18 @@ chmod g+x Arcivo = se hace el cambio de la mask para agregar el permiso de ejecu
 
 mask = cuando se cambia solo es efectiva para los usuarios externos y el grupo, al dueño no le afecta
 -------------------------------------------------------------------------------------------------------------------
+
+------Negar permisos ACL-------------------------------------------------------------------------------------------
+sefacl -m user:student:-- /.../ = negacion de los permisos 
+------------------------------------------------------------------
+
+------Copiar ACL ----------------------------------------------------------------
+getfacl file-A | setfacl --set-file=- file-B = las ACL que tiene file-A se le pasan a File-B se hace una copia de las ACL
+---------------------------------------------------------------------------------
+
+-----Eliminar ACL-------------------------------------------------------------------------
+setfacl -x u:student: arch= se elimina las ACL de un usuario
+setfacl -k /../ = eliminar ACL de default
+setfacl -b /../ = eliminar todas las ACL
+
+
