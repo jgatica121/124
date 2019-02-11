@@ -21,4 +21,10 @@ Shed_normal = forma de asignar los tiempos
  renice -n -# "Identificador del proceso" = cambiar los valores a un proceso que ya existe
  
  
+ seq = imprime una lista de nucleos 
+ 
+ killall sh1sun = cerrar proceso de manera normal
+ -9= forzar cierre
+  r = dentro del top se puede cambiar la prioridad del proceso 
+ 
  
