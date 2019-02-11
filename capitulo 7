@@ -1,0 +1,21 @@
+-------Administracion de seguridad de selinux------------------------
+
+-SELinux no es un firework-
+getenforce = saber en que modo esta selinux
+
+----Modos en los que trabaja SElinux----
+enforcing = no permite el acceso
+permissive = puede moverme, no protege, pero registra los movimiento
+disables
+
+
+ps axZ = informacion del contexto 
+ls -Z /... = contexto del directorio
+
+setenforce = cambiar el modo de selinux pero no es pemanente
+permissivo=0
+
+
+----Booleanos de SELinux----
+getsebool = para mostrar booleanos de SELinux
+-a = detalla los booleanos
