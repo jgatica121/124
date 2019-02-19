@@ -19,3 +19,11 @@ permissivo=0
 ----Booleanos de SELinux----
 getsebool = para mostrar booleanos de SELinux
 -a = detalla los booleanos
+
+/etc/selinux/config = archivo para modificar SELinux
+
+semanage fcontext -l = base de informacion de selinux
+
+semanage fcontext -a -t hhtpd_sys_content_t '/virtual(/-*)?' = agrega a la baseda datos un contexto dentro de otra carpeta para que sea conocido
+
+restorecon -RFvv /virtual = que se vean los cambios del comando anterior
