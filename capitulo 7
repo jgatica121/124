@@ -1,6 +1,6 @@
 -------Administracion de seguridad de selinux------------------------
 
--SELinux no es un firework-
+-SELinuselinux no es un firework-
 getenforce = saber en que modo esta selinux
 
 ----Modos en los que trabaja SElinux----
@@ -26,6 +26,8 @@ semanage fcontext -l = base de informacion de selinux
 
 semanage fcontext -a -t hhtpd_sys_content_t '/virtual(/-*)?' = agrega a la baseda datos un contexto dentro de otra carpeta para que sea conocido
 
+semanage fcontext -d -t hhtpd_sys_content_t '/virtual(/-*)?' = se agrega la "D" para eliminar el contesto 
+
 restorecon -RFvv /virtual = que se vean los cambios del comando anterior
 
 getsebool -a = booleanos que estan disponibles 
@@ -43,6 +45,15 @@ semanage boolean -l -C = en que estado esta o va  estar despues de un reinicio
 
 
 
+yum install selinux-policy-devel = paqute que contiene informacion sobre SELinux
+mandb = actualizar el man
+rpm-qd selinux-policy-devel = paquetes que se instalaron
+
+
+
+
+
+-----Solución de problemas de SELinux-----
 
 
 
