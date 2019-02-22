@@ -36,7 +36,8 @@ semanage boolena -l | grep hhtd_enable_cgi = conocer en que estado se encuentra 
 setsebool -P hhtpd_enable_cgi=off = apagar un booleano
 setsebool -P hhtpd_enable_cgi=on = encender un booleano despues de un reinicio percisente
 
-semanage boolean -l -c = en que estado esta o va  estar despues de un reinicio
+semanage boolean -l -C = en que estado esta o va  estar despues de un reinicio
+
 
 
 
